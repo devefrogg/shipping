@@ -1,5 +1,5 @@
 # Shipping
-Generate PDF Label for Chronpost or Colissimo, 
+Generate PDF Label for Chronpost or Colissimo,
 get only the pdf to print and the tracking number
 
 #Install with composer :
@@ -10,7 +10,7 @@ composer require tlissak/shipping
 
 Colissimo usage :
 ```php
-use Shipping ;
+use Shipping\Colissimo ;
 
 $colissimo = new Colissimo('accountNumber','accountPassword') ;
 
@@ -46,9 +46,9 @@ echo $response['tracking'] ;
 file_put_contents("colissimo.pdf",$response["pdf"]) ;
 ```
 
-For Chronopost : 
+For Chronopost :
 ```php
-use Shipping ;
+use Shipping\Chronopost ;
 
 $payloads = [
 

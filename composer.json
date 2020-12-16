@@ -1,6 +1,11 @@
 {
+
+
     "name": "tlissak/shipping",
-    "license": "MIT",
+    ""
+    "license": "GPL-3.0",
+
+    "homepage": "https://github.com/tlissak/ImageOptimisation",
     "minimum-stability": "stable",
     "authors": [
         {
@@ -8,6 +13,10 @@
             "email": "tlissak@gmail.com"
         }
     ],
+
+    "autoload": {
+      "files": ["Colissimo.php","Chronopost.php"]
+    },
     "require": {
         "opportus/sls-client": "v1.0.0-alpha.1",
         "ext-soap": "*"
