@@ -1,0 +1,15 @@
+{
+    "name": "tlissak/shipping",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "tlissak",
+            "email": "tlissak@gmail.com"
+        }
+    ],
+    "require": {
+        "opportus/sls-client": "v1.0.0-alpha.1",
+        "ext-soap": "*"
+    }
+}
