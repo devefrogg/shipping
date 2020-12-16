@@ -1,16 +1,13 @@
 {
-
-
     "name": "tlissak/shipping",
-    ""
+    "description": "Generate PDF Label for Chronpost or Colissimo,get only the pdf to print and the tracking number",
     "license": "GPL-3.0",
-
-    "homepage": "https://github.com/tlissak/ImageOptimisation",
+    "homepage": "https://github.com/tlissak/shipping",
     "minimum-stability": "stable",
     "authors": [
         {
-            "name": "tlissak",
-            "email": "tlissak@gmail.com"
+          "name": "tlissak",
+          "email": "tlissak@gmail.com"
         }
     ],
 
@@ -18,7 +15,8 @@
       "files": ["Colissimo.php","Chronopost.php"]
     },
     "require": {
-        "opportus/sls-client": "v1.0.0-alpha.1",
-        "ext-soap": "*"
+      "php": ">=5.4.0",
+      "opportus/sls-client": "v1.0.0-alpha.1",
+      "ext-soap": "*"
     }
 }
