@@ -18,7 +18,9 @@ class Chronopost
     public static $account   ;
     public static $pass   ;
 
-    public function __construct($account,$password)
+    public static $subaccount;
+
+    public function __construct($account,$password,$subaccount='')
     {
         // Check is SOAP is available
         if (!extension_loaded('soap')) {
@@ -27,6 +29,7 @@ class Chronopost
 
         self::$account=$account;
         self::$pass=$password ;
+        self::$subaccount=$subaccount ;
     }
 
     public function wrapper($payloads){
@@ -35,6 +38,7 @@ class Chronopost
 
         $shipp->password = self::$pass;
         $shipp->headerValue->accountNumber = self::$account ;
+        $shipp->headerValue->subAccount = self::$subaccount ;
 
         foreach ($payloads['shipper'] as $k=>$v){
             $shipp->shipperValue->{"shipper".$k} = $v ;
