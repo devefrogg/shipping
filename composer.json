@@ -1,8 +1,7 @@
 {
-    "name": "tlissak/shipping",
+    "name": "devefrogg/shipping",
     "description": "Generate PDF Label for Chronpost or Colissimo,get only the pdf to print and the tracking number",
     "license": "GPL-3.0",
-    "homepage": "https://github.com/tlissak/shipping",
     "minimum-stability": "stable",
     "authors": [
         {
